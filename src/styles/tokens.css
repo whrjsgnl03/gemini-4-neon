@@ -1,0 +1,117 @@
+:root {
+  /* Apple visionOS / Spatial Liquid Glass Palette */
+  --bg-canvas: #050914;
+  --bg-gradient: radial-gradient(circle at 50% 18%, #0e1f42 0%, #071022 48%, #040812 100%);
+  --ink-primary: #f8fafc;
+  --ink-secondary: #cbd5e1;
+  --ink-tertiary: #94a3b8;
+
+  --accent-blue: #38bdf8;
+  --accent-cyan: #22d3ee;
+  --accent-neon-line: #ff6b4a;
+
+  /* 3-Tier Real Spatial Frosted Glass Hierarchy */
+  /* Tier 1: Floating Optical Navigation Chrome */
+  --glass-chrome-bg: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.14) 0%,
+    rgba(15, 23, 42, 0.42) 100%
+  );
+  --glass-chrome-blur: 28px;
+  --glass-chrome-border: rgba(255, 255, 255, 0.22);
+  --glass-chrome-shadow:
+    0 18px 46px -14px rgba(2, 6, 23, 0.56),
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.58);
+
+  /* Tier 2: Primary See-Through Spatial Glass Panels */
+  --glass-panel-bg: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.04) 48%,
+    rgba(125, 211, 252, 0.08) 100%
+  );
+  --glass-panel-blur: 22px;
+  --glass-panel-border: rgba(255, 255, 255, 0.22);
+  --glass-panel-shadow:
+    0 24px 64px -16px rgba(2, 6, 23, 0.58),
+    0 4px 18px -4px rgba(0, 0, 0, 0.35),
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.62),
+    inset 1px 0 0 rgba(255, 255, 255, 0.26),
+    inset 0 -1px 0 rgba(56, 189, 248, 0.28),
+    inset -1px 0 0 rgba(255, 107, 74, 0.16);
+
+  /* Tier 3: Ultra-Sheer Inner Frosted Compartments */
+  --glass-well-bg: rgba(255, 255, 255, 0.06);
+  --glass-well-solid: rgba(15, 23, 42, 0.34);
+  --glass-well-border: rgba(255, 255, 255, 0.15);
+
+  /* Smoked Crystal Glass (Code Terminal) */
+  --glass-obsidian-bg: rgba(6, 10, 20, 0.52);
+  --glass-obsidian-blur: 24px;
+  --glass-obsidian-border: rgba(255, 255, 255, 0.22);
+  --glass-obsidian-shadow:
+    0 24px 64px -18px rgba(2, 6, 23, 0.62),
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.42);
+  --obsidian-ink: #f1f5f9;
+  --obsidian-muted: #94a3b8;
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", sans-serif;
+  --font-mono: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Type Scale */
+  --text-display-size: clamp(2.15rem, 3.6vw, 3.35rem);
+  --text-display-leading: 1.12;
+  --text-display-tracking: -0.032em;
+
+  --text-h2-size: clamp(1.55rem, 2.3vw, 2.15rem);
+  --text-h2-leading: 1.2;
+  --text-h2-tracking: -0.025em;
+
+  --text-h3-size: clamp(1.0625rem, 1.3vw, 1.22rem);
+  --text-h3-leading: 1.32;
+  --text-h3-tracking: -0.015em;
+
+  --text-body-size: 0.96875rem;
+  --text-body-leading: 1.62;
+  --text-body-tracking: -0.008em;
+
+  /* Radii */
+  --radius-panel: 26px;
+  --radius-well: 16px;
+  --radius-pill: 9999px;
+
+  /* Motion */
+  --ease-apple-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-apple-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+
+  /* Spatial 3-Zone Container */
+  --container-max: 1400px;
+  --gutter-x: clamp(20px, 3vw, 36px);
+  --section-py: clamp(64px, 7.5vw, 108px);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  :root {
+    --glass-chrome-bg: #0f172a;
+    --glass-panel-bg: #111c33;
+    --glass-well-bg: #182542;
+    --glass-well-solid: #16223d;
+    --glass-well-border: rgba(255, 255, 255, 0.24);
+    --glass-obsidian-bg: #0b1120;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --ink-primary: #ffffff;
+    --ink-secondary: #e2e8f0;
+    --ink-tertiary: #cbd5e1;
+    --glass-panel-bg: rgba(15, 23, 42, 0.78);
+    --glass-well-bg: rgba(15, 23, 42, 0.85);
+    --glass-well-solid: rgba(15, 23, 42, 0.9);
+    --glass-panel-border: rgba(255, 255, 255, 0.42);
+    --glass-chrome-border: rgba(255, 255, 255, 0.42);
+    --glass-well-border: rgba(255, 255, 255, 0.34);
+  }
+}
