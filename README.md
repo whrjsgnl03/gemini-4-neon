@@ -1,8 +1,15 @@
-# Gemini 4 Neon Showcase
+# Gemini 4 Neon Performance Test Showcase
 
-Google DeepMind의 **Gemini 4 Neon** (`gemini-4-neon`) 모델 사양, 아키텍처, 추론 깊이 제어 및 벤치마크 성과를 **Apple Spatial Liquid Glass** 글래스모피즘과 **GSAP + ScrollTrigger** 스크롤 연동 3D 입자 모핑 애니메이션으로 풀어낸 인터랙티브 웹 쇼케이스입니다.
+Google DeepMind의 **Gemini 4 Neon** (`gemini-4-neon`) 모델의 **프론트엔드 설계·디자인·애니메이션·구현 성능을 직접 테스트하기 위해 제작된 웹사이트**입니다.  
+모델 자체를 소개하는 콘텐츠와 함께 **Apple Spatial Liquid Glass** 글래스모피즘, **GSAP + ScrollTrigger** 스크롤 연동, 중앙 **3D 입자 모핑 Canvas**, 반응형 레이아웃 완성도를 검증하는 실험 프로젝트로 구성했습니다.
 
 - **GitHub Repository**: https://github.com/whrjsgnl03/gemini-4-neon
+
+## 제작 목적
+
+- **실전 프론트엔드 구현 성능 테스트**: 단일 지시 및 반복 피드백 상황에서 `gemini-4-neon`이 복잡한 레이아웃(좌·우 3단 회랑), 시각 디테일, 인터랙션 일관성을 얼마나 정교하게 구현하는지 확인
+- **고난도 그래픽·모션 검증**: 실제 배경 투과형 글래스모피즘(`backdrop-filter`), 스크롤 위치별 8가지 3D 입자 형상 연속 모핑, 인터랙티브 UI 반응성 테스트
+- **자기 설명형 콘텐츠 구성**: 테스트 대상 모델인 Gemini 4 Neon의 공식 사양, 4단계 추론 제어, 라인업 비교 및 벤치마크를 웹페이지 주제로 활용
 
 ---
 
